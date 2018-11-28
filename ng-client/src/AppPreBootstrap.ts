@@ -75,10 +75,10 @@ export class AppPreBootstrap {
     if (!token) {
       token = '';
     }
-
+    var aurl = AppConsts.remoteServiceBaseUrl + '/AbpUserConfiguration/GetAll';
     return abp
       .ajax({
-        url: AppConsts.remoteServiceBaseUrl + '/AbpUserConfiguration/GetAll',
+        url: aurl,
         method: 'GET',
         headers: {
           Authorization: 'Bearer ' + token,

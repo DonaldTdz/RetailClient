@@ -20,7 +20,7 @@ namespace HC.RetailClient.Web.Host.Controllers
         public IActionResult Index()
         {
             //return Redirect("/swagger");
-            return Redirect("/app/index.html");
+            return Redirect("/index.html");
         }
 
         /// <summary>
@@ -47,6 +47,13 @@ namespace HC.RetailClient.Web.Host.Controllers
             );
 
             return Content("Sent notification: " + message);
+        }
+
+        [Route("Home/Error/{statusCode}")]
+        //[Route("GAWX/Error")]
+        public IActionResult Error(int? statusCode)
+        {
+            return Redirect("/index.html");
         }
     }
 }

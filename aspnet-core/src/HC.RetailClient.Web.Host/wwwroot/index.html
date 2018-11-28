@@ -1,10 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
   <head>
     <meta charset="utf-8">
     <title>52ABP - YoyoCmsTemplate</title>
-    <base href="/app/">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -104,18 +105,27 @@
   <link rel="stylesheet" href="styles.11a5dc32721ff7bed681.css"></head>
 
   <body>
-    <app-root></app-root>
-    <div class="preloader">
-      <div class="cs-loader">
-        <div class="cs-loader-inner">
-          <label> ●</label>
-          <label> ●</label>
-          <label> ●</label>
-          <label> ●</label>
-          <label> ●</label>
-          <label> ●</label>
-        </div>
+      <app-root></app-root>
+      <div class="preloader">
+          <div class="cs-loader">
+              <div class="cs-loader-inner">
+                  <label> ●</label>
+                  <label> ●</label>
+                  <label> ●</label>
+                  <label> ●</label>
+                  <label> ●</label>
+                  <label> ●</label>
+              </div>
+          </div>
       </div>
-  <script type="text/javascript" src="runtime.34f8363d527bc68987fc.js"></script><script type="text/javascript" src="polyfills.27ba7ccfa975df7b6881.js"></script><script type="text/javascript" src="scripts.c7971f5ae3091208b855.js"></script><script type="text/javascript" src="main.acc3f36d8da4c018e02b.js"></script></body>
+      <!-- Insert this line above script imports  -->
+      <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+      <script type="text/javascript" src="runtime.1d40cd67d9a8d2545647.js"></script>
+      <script type="text/javascript" src="polyfills.27ba7ccfa975df7b6881.js"></script>
+      <script type="text/javascript" src="scripts.c7971f5ae3091208b855.js"></script>
+      <script type="text/javascript" src="main.a02a528cb0ff3c486323.js"></script>
+      <!-- Insert this line after script imports -->
+      <script>if (window.module) module = window.module;</script>
+  </body>
 
 </html>

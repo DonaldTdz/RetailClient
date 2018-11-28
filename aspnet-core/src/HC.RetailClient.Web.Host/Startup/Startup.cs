@@ -119,6 +119,8 @@ namespace HC.RetailClient.Web.Host.Startup
             });
 #endif
 
+            app.UseStatusCodePagesWithReExecute("/Home/Error/{0}");
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
